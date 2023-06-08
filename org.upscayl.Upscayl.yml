@@ -28,7 +28,7 @@ modules:
           - x86_64
         url: >-
           https://github.com/upscayl/upscayl/releases/download/v2.5.5/upscayl-2.5.5-linux.zip
-        sha256: d57eb8e18ae4b92ecc15dffe6233430b6c52572ed42299e30d44bbc2b806d984
+        sha256: a4d92f4d1cbc3a7ebc9d1b3e9b5c781f54284aa93d6cdf2b9a3e2c7864bf3c75
       - type: file
         url: >-
           https://raw.githubusercontent.com/upscayl/upscayl/main/flatpak/org.upscayl.Upscayl.metainfo.xml
