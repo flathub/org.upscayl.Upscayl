@@ -27,19 +27,19 @@ modules:
         only-arches:
           - x86_64
         url: >-
-          https://github.com/upscayl/upscayl/releases/download/v2.8.1/upscayl-2.8.1-linux.zip
-        sha256: 40bda1baf37c68bdd837c0e587c9af533887e78f2ae539c13fec2e05b8bf5446
+          https://github.com/upscayl/upscayl/releases/download/v2.9.1/upscayl-2.9.1-linux.zip
+        sha256: 238f1d9bebca8553b94572c6f9cf78b7838429f560842a90ad1f99ecda306c02
       - type: file
         url: >-
           https://raw.githubusercontent.com/upscayl/upscayl/main/flatpak/org.upscayl.Upscayl.metainfo.xml
-        sha256: 363c6e2c6c81f94c7564cccaa3fd2015f3456d01aab78d05df0285da600ff4cf
+        sha256: e9fe8dc362f7b70f31c752c9c025b2f03447e17eaa93aa725a3a56b3ffc7893c
       - type: script
         dest-filename: upscayl-run
         commands:
           - zypak-wrapper /app/upscayl/upscayl
     build-commands:
       - install -d /app/upscayl
-      - unzip upscayl-2.8.1-linux -d /app/upscayl
+      - unzip upscayl-2.9.1-linux -d /app/upscayl
       - install upscayl-run /app/bin/
       - >-
         install -Dm644 /app/upscayl/icon_512x512.png
