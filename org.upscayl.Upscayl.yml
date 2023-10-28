@@ -32,7 +32,7 @@ modules:
       - type: file
         url: >-
           https://raw.githubusercontent.com/upscayl/upscayl/main/flatpak/org.upscayl.Upscayl.metainfo.xml
-        sha256: e9fe8dc362f7b70f31c752c9c025b2f03447e17eaa93aa725a3a56b3ffc7893c
+        sha256: 46e8e07efe96a98896c5a7de4d3a10c6d9d3ef609bc301c53bc24660409ab9c9
       - type: script
         dest-filename: upscayl-run
         commands:
