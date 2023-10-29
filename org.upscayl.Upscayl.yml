@@ -37,10 +37,6 @@ modules:
           timestamp-query: .published_at
           url-query: '"https://github.com/upscayl/upscayl/releases/download/v"
             + $version + "/upscayl-" + $version + "-linux.zip"'
-      - type: file
-        url: >-
-          https://raw.githubusercontent.com/upscayl/upscayl/main/flatpak/org.upscayl.Upscayl.metainfo.xml
-        sha256: 46e8e07efe96a98896c5a7de4d3a10c6d9d3ef609bc301c53bc24660409ab9c9
       - type: script
         dest-filename: upscayl-run
         commands:
