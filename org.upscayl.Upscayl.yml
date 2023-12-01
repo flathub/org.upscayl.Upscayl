@@ -11,7 +11,8 @@ finish-args:
   - --device=dri
   - --filesystem=home
   - --share=network
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --socket=pulseaudio
 
 modules:
