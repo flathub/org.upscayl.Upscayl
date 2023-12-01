@@ -29,10 +29,16 @@ modules:
         url: >-
           https://github.com/upscayl/upscayl/releases/download/v2.9.1/upscayl-2.9.1-linux.zip
         sha256: 238f1d9bebca8553b94572c6f9cf78b7838429f560842a90ad1f99ecda306c02
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/upscayl/upscayl/releases/latest
+          tag-query: .tag_name
+          version-query: $tag | sub("^v"; "")
+          timestamp-query: .published_at
+          url-query: '"https://github.com/upscayl/upscayl/releases/download/v"
+            + $version + "/upscayl-" + $version + "-linux.zip"'
       - type: file
-        url: >-
-          https://raw.githubusercontent.com/upscayl/upscayl/main/flatpak/org.upscayl.Upscayl.metainfo.xml
-        sha256: 46e8e07efe96a98896c5a7de4d3a10c6d9d3ef609bc301c53bc24660409ab9c9
+        path: org.upscayl.Upscayl.metainfo.xml
       - type: script
         dest-filename: upscayl-run
         commands:
