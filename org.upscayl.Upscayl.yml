@@ -1,9 +1,9 @@
 id: org.upscayl.Upscayl
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Platform
-runtime-version: "23.08"
+runtime-version: '23.08'
 base: org.electronjs.Electron2.BaseApp
-base-version: "23.08"
+base-version: '23.08'
 command: upscayl-run
 separate-locales: false
 
@@ -27,16 +27,16 @@ modules:
         only-arches:
           - x86_64
         url: >-
-          https://github.com/upscayl/upscayl/releases/download/v2.9.1/upscayl-2.9.1-linux.zip
-        sha256: 238f1d9bebca8553b94572c6f9cf78b7838429f560842a90ad1f99ecda306c02
+          https://github.com/upscayl/upscayl/releases/download/v2.9.4/upscayl-2.9.4-linux.zip
+        sha256: 246f4ab8ee03916d53a5c7ed7060688007d10dcdd232df4007e3a01a08e2408a
         x-checker-data:
           type: json
           url: https://api.github.com/repos/upscayl/upscayl/releases/latest
           tag-query: .tag_name
           version-query: $tag | sub("^v"; "")
           timestamp-query: .published_at
-          url-query: '"https://github.com/upscayl/upscayl/releases/download/v"
-            + $version + "/upscayl-" + $version + "-linux.zip"'
+          url-query: '"https://github.com/upscayl/upscayl/releases/download/v" + $version
+            + "/upscayl-" + $version + "-linux.zip"'
       - type: file
         path: org.upscayl.Upscayl.metainfo.xml
       - type: script
