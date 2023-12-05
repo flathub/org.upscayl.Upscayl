@@ -38,6 +38,7 @@ modules:
           timestamp-query: .published_at
           url-query: '"https://github.com/upscayl/upscayl/releases/download/v"
             + $version + "/upscayl-" + $version + "-linux.zip"'
+        dest-filename: upscayl-linux
       - type: file
         path: org.upscayl.Upscayl.metainfo.xml
       - type: script
@@ -46,7 +47,7 @@ modules:
           - zypak-wrapper /app/upscayl/upscayl
     build-commands:
       - install -d /app/upscayl
-      - unzip upscayl-2.9.1-linux -d /app/upscayl
+      - unzip upscayl-linux -d /app/upscayl
       - install upscayl-run /app/bin/
       - >-
         install -Dm644 /app/upscayl/resources/512x512.png
