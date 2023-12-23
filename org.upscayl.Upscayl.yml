@@ -48,13 +48,13 @@ modules:
       - install -d /app/upscayl
       - unzip upscayl-linux -d /app/upscayl
       - mkdir -p /app/share/applications/
-      - echo -e "[Desktop Entry]\n
-        X-Desktop-File-Install-Version=0.26\n
-        Exec=upscayl-run %U --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations\n
-        Comment=Upscale Images with AI\n
-        Name=Upscayl\n
-        StartupNotify=false\n
-        Categories=ImageProcessing;RasterGraphics;Graphics;\n
+      - echo -e "[Desktop Entry]
+        X-Desktop-File-Install-Version=0.26
+        Exec=upscayl-run %U --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations
+        Comment=Upscale Images with AI
+        Name=Upscayl
+        StartupNotify=false
+        Categories=ImageProcessing;RasterGraphics;Graphics;
         Type=Application" > /app/share/applications/org.upscayl.Upscayl.desktop
       - install upscayl-run /app/bin/
       - >-
