@@ -48,7 +48,7 @@ modules:
       - install -d /app/upscayl
       - unzip upscayl-linux -d /app/upscayl
       - touch $(pwd)/org.upscayl.Upscayl.desktop
-      - desktop-file-edit --set-key=X-Desktop-File-Install-Version --set-value=0.26 \
+      - desktop-file-edit \
           --set-key=Exec --set-value="upscayl-run %U --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations" \
           --set-key=Comment --set-value="Upscale Images with AI" \
           --set-key=Name --set-value="Upscayl" \
