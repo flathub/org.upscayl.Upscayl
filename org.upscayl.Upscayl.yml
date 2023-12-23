@@ -48,8 +48,7 @@ modules:
     build-commands:
       - install -d /app/upscayl
       - unzip upscayl-linux -d /app/upscayl
-      - mkdir -p /app/share/applications/
-      - touch /app/share/applications/org.upscayl.Upscayl.desktop
+      - touch $(pwd)/org.upscayl.Upscayl.desktop
       - desktop-file-edit --set-key=X-Desktop-File-Install-Version --set-value=0.26 \
           --set-key=Exec --set-value="upscayl-run %U --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations" \
           --set-key=Comment --set-value="Upscale Images with AI" \
@@ -57,7 +56,8 @@ modules:
           --set-key=StartupNotify --set-value=false \
           --set-key=Categories --set-value="ImageProcessing;RasterGraphics;Graphics;" \
           --set-key=Type --set-value=Application \
-          /app/share/applications/org.upscayl.Upscayl.desktop
+          $(pwd)/org.upscayl.Upscayl.desktop
+      - install $(pwd)/org.upscayl.Upscayl.desktop /app/share/applications/org.upscayl.Upscayl.desktop
       - install upscayl-run /app/bin/
       - >-
         install -Dm644 /app/upscayl/resources/512x512.png
