@@ -44,7 +44,7 @@ modules:
       - type: script
         dest-filename: upscayl-run
         commands:
-          - zypak-wrapper /app/upscayl/upscayl --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations
+          - zypak-wrapper /app/upscayl/upscayl
     build-commands:
       - install -d /app/upscayl
       - unzip upscayl-linux -d /app/upscayl
