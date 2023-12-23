@@ -48,6 +48,7 @@ modules:
     build-commands:
       - install -d /app/upscayl
       - unzip upscayl-linux -d /app/upscayl
+      - mkdir -p /app/share/applications/
       - touch /app/share/applications/org.upscayl.Upscayl.desktop
       - desktop-file-edit --set-key=X-Desktop-File-Install-Version --set-value=0.26 \
           --set-key=Exec --set-value="upscayl-run %U --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations" \
