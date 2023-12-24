@@ -60,7 +60,15 @@ modules:
         install -Dp -m644 org.upscayl.Upscayl.metainfo.xml
         /app/share/metainfo/org.upscayl.Upscayl.metainfo.xml
       - touch org.upscayl.Upscayl.desktop
-      - desktop-file-edit --set-key=X-Desktop-File-Install-Version --set-value=0.26 --set-key=Exec --set-value="upscayl-run %U --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations" --set-key=Comment --set-value="Upscale Images with AI" --set-key=Name --set-value="Upscayl" --set-key=StartupNotify --set-value=false --set-key=Categories --set-value="ImageProcessing;RasterGraphics;Graphics;" --set-key=Type --set-value=Application org.upscayl.Upscayl.desktop
       - >-
-        install -Dp -m644 org.upscayl.Upscayl.desktop
+        desktop-file-edit --set-key=Exec --set-value="upscayl-run %U --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations" \
+                          --set-key=Icon --set-value=org.upscayl.Upscayl \
+                          --set-key=Comment --set-value="Upscale Images with AI" \
+                          --set-key=Name --set-value="Upscayl" \
+                          --set-key=StartupNotify --set-value=false \
+                          --set-key=Categories --set-value="ImageProcessing;RasterGraphics;Graphics;" \
+                          --set-key=Type --set-value=Application \
+                          org.upscayl.Upscayl.desktop
+      - >-
+        install -Dm644 org.upscayl.Upscayl.desktop
         /app/share/applications/org.upscayl.Upscayl.desktop
