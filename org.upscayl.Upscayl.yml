@@ -1,9 +1,9 @@
 id: org.upscayl.Upscayl
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: "23.08"
 base: org.electronjs.Electron2.BaseApp
-base-version: '23.08'
+base-version: "23.08"
 command: upscayl-run
 separate-locales: false
 
@@ -36,7 +36,8 @@ modules:
           tag-query: .tag_name
           version-query: $tag | sub("^v"; "")
           timestamp-query: .published_at
-          url-query: '"https://github.com/upscayl/upscayl/releases/download/v" + $version
+          url-query:
+            '"https://github.com/upscayl/upscayl/releases/download/v" + $version
             + "/upscayl-" + $version + "-linux.zip"'
         dest-filename: upscayl-linux
       - type: file
@@ -44,7 +45,7 @@ modules:
       - type: script
         dest-filename: upscayl-run
         commands:
-          - zypak-wrapper /app/upscayl/upscayl
+          - zypak-wrapper /app/upscayl/upscayl --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations
     build-commands:
       - install -d /app/upscayl
       - unzip upscayl-linux -d /app/upscayl
@@ -58,6 +59,16 @@ modules:
       - >-
         install -Dp -m644 org.upscayl.Upscayl.metainfo.xml
         /app/share/metainfo/org.upscayl.Upscayl.metainfo.xml
+      - touch org.upscayl.Upscayl.desktop
       - >-
-        install -Dm644 /app/upscayl/resources/org.upscayl.Upscayl.desktop
+        desktop-file-edit --set-key=Exec --set-value="upscayl-run %U --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations" \
+                          --set-key=Icon --set-value=org.upscayl.Upscayl \
+                          --set-key=Comment --set-value="Upscale Images with AI" \
+                          --set-key=Name --set-value="Upscayl" \
+                          --set-key=StartupNotify --set-value=false \
+                          --set-key=Categories --set-value="ImageProcessing;RasterGraphics;Graphics;" \
+                          --set-key=Type --set-value=Application \
+                          org.upscayl.Upscayl.desktop
+      - >-
+        install -Dm644 org.upscayl.Upscayl.desktop
         /app/share/applications/org.upscayl.Upscayl.desktop
