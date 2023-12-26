@@ -9,6 +9,7 @@ separate-locales: false
 
 finish-args:
   - --device=dri
+  - --share=ipc
   - --filesystem=home
   - --share=network
   - --socket=wayland
