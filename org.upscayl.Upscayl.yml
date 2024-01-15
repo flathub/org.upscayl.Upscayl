@@ -1,9 +1,9 @@
 id: org.upscayl.Upscayl
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Platform
-runtime-version: "23.08"
+runtime-version: '23.08'
 base: org.electronjs.Electron2.BaseApp
-base-version: "23.08"
+base-version: '23.08'
 command: upscayl-run
 separate-locales: false
 
@@ -29,16 +29,15 @@ modules:
         only-arches:
           - x86_64
         url: >-
-          https://github.com/upscayl/upscayl/releases/download/v2.9.5/upscayl-2.9.5-linux.zip
-        sha256: f6c54a9fdcafada1dd4fe836ef9cffb464e8bfc6014e2123852349afcd2222f9
+          https://github.com/upscayl/upscayl/releases/download/v2.9.6/upscayl-2.9.6-linux.zip
+        sha256: d38bf39053bd94a724c0176042bd27d9b3c9dc2b760c829c7d24acbbaeb3229e
         x-checker-data:
           type: json
           url: https://api.github.com/repos/upscayl/upscayl/releases/latest
           tag-query: .tag_name
           version-query: $tag | sub("^v"; "")
           timestamp-query: .published_at
-          url-query:
-            '"https://github.com/upscayl/upscayl/releases/download/v" + $version
+          url-query: '"https://github.com/upscayl/upscayl/releases/download/v" + $version
             + "/upscayl-" + $version + "-linux.zip"'
         dest-filename: upscayl-linux
       - type: file
@@ -67,7 +66,8 @@ modules:
                           --set-key=Comment --set-value="Upscale Images with AI" \
                           --set-key=Name --set-value="Upscayl" \
                           --set-key=StartupNotify --set-value=false \
-                          --set-key=Categories --set-value="ImageProcessing;RasterGraphics;Graphics;" \
+                          --set-key=Categories --set-value="ImageProcessing;RasterGraphics;Graphics;"
+        \
                           --set-key=Type --set-value=Application \
                           org.upscayl.Upscayl.desktop
       - >-
