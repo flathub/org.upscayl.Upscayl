@@ -9,10 +9,11 @@ separate-locales: false
 
 finish-args:
   - --device=dri
+  - --share=ipc
   - --filesystem=home
   - --share=network
   - --socket=wayland
-  - --socket=x11
+  - --socket=fallback-x11
   - --socket=pulseaudio
 
 modules:
@@ -60,8 +61,7 @@ modules:
         /app/share/metainfo/org.upscayl.Upscayl.metainfo.xml
       - touch org.upscayl.Upscayl.desktop
       - >-
-        desktop-file-edit --set-key=Exec --set-value="upscayl-run %U --ozone-platform-hint=auto
-        --enable-features=WaylandWindowDecorations" \
+        desktop-file-edit --set-key=Exec --set-value="upscayl-run %U" \
                           --set-key=Icon --set-value=org.upscayl.Upscayl \
                           --set-key=Comment --set-value="Upscale Images with AI" \
                           --set-key=Name --set-value="Upscayl" \
