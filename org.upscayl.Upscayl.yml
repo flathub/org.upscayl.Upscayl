@@ -30,7 +30,7 @@ modules:
           - x86_64
         url: >-
           https://github.com/upscayl/upscayl/releases/download/v2.9.6/upscayl-2.9.6-linux.zip
-        sha256: d38bf39053bd94a724c0176042bd27d9b3c9dc2b760c829c7d24acbbaeb3229e
+        sha256: 32d9a70a8ef6d0171d2f20ca5169d7586b9ad7fac91f79b0b2ec5cc23150b5d2
         x-checker-data:
           type: json
           url: https://api.github.com/repos/upscayl/upscayl/releases/latest
