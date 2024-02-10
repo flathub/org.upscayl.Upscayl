@@ -7,7 +7,7 @@
   <url type="homepage">https://upscayl.org</url>
   <url type="bugtracker">https://github.com/upscayl/upscayl/issues</url>
   <url type="donation">https://buymeacoffee.com/fossisthefuture</url>
-
+  <developer_name>Upscayl</developer_name>
   <metadata_license>FSFAP</metadata_license>
   <project_license>AGPL-3.0</project_license>
 
@@ -49,6 +49,7 @@
   </screenshots>
 
   <releases>
+    <release version="2.9.9" date="2024-02-10"/>
     <release version="2.9.8" date="2024-01-16"/>
     <release version="2.9.7" date="2024-01-15"/>
     <release version="2.9.5" date="2023-12-05"/>
