@@ -29,8 +29,8 @@ modules:
         only-arches:
           - x86_64
         url: >-
-          https://github.com/upscayl/upscayl/releases/download/v2.9.9/upscayl-2.9.9-linux.zip
-        sha256: e1dc1ee26cdce494ade39aea101e32c8e17ec932a238b904e2d0f95b494b310b
+          https://github.com/upscayl/upscayl/releases/download/v2.10.0/upscayl-2.10.0-linux.zip
+        sha256: 3fc7dbaddb03e007c04d5b49d58f6d4db6444606c0339cb59948cf0aa4e05702
         x-checker-data:
           type: json
           url: https://api.github.com/repos/upscayl/upscayl/releases/latest
@@ -66,7 +66,8 @@ modules:
                           --set-key=Comment --set-value="Upscale Images with AI" \
                           --set-key=Name --set-value="Upscayl" \
                           --set-key=StartupNotify --set-value=false \
-                          --set-key=Categories --set-value="ImageProcessing;RasterGraphics;Graphics;" \
+                          --set-key=Categories --set-value="ImageProcessing;RasterGraphics;Graphics;"
+        \
                           --set-key=Type --set-value=Application \
                           org.upscayl.Upscayl.desktop
       - >-
