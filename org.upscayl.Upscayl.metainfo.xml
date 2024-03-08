@@ -22,7 +22,7 @@
   <launchable type="desktop-id">org.upscayl.Upscayl.desktop</launchable>
 
   <screenshots>
-    <screenshot>
+    <screenshot default="true">
       <caption>Banner</caption>
       <image>https://raw.githubusercontent.com/upscayl/upscayl.github.io/main/static/1.png</image>
     </screenshot>
@@ -54,7 +54,7 @@
     <release version="2.9.8" date="2024-01-16"/>
     <release version="2.9.7" date="2024-01-15"/>
     <release version="2.9.5" date="2023-12-05"/>
-    <release version="v2.9.1" date="2023-10-28">
+    <release version="2.9.1" date="2023-10-28">
       <description>
         <p>Changes</p>
         <ul>
@@ -63,7 +63,7 @@
         </ul>
       </description>
     </release>
-    <release version="v2.8.5" date="2023-09-21">
+    <release version="2.8.5" date="2023-09-21">
       <description>
         <p>Changes</p>
         <ul>
@@ -78,7 +78,7 @@
         </ul>
       </description>
     </release>
-    <release version="v2.8.1" date="2023-06-13">
+    <release version="2.8.1" date="2023-06-13">
       <description>
         <p>Changes</p>
         <ul>
@@ -96,7 +96,7 @@
         </ul>
       </description>
     </release>
-    <release version="v2.5.5" date="2023-06-04">
+    <release version="2.5.5" date="2023-06-04">
       <description>
         <p>Changes</p>
         <ul>
@@ -108,7 +108,7 @@
         </ul>
       </description>
     </release>
-    <release version="v2.5.1" date="2023-05-09">
+    <release version="2.5.1" date="2023-05-09">
       <description>
         <p>Changes</p>
         <ul>
