@@ -22,7 +22,7 @@
   <launchable type="desktop-id">org.upscayl.Upscayl.desktop</launchable>
 
   <screenshots>
-    <screenshot default="true">
+    <screenshot type="default">
       <caption>Banner</caption>
       <image>https://raw.githubusercontent.com/upscayl/upscayl.github.io/main/static/1.png</image>
     </screenshot>
