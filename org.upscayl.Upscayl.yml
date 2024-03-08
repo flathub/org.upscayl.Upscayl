@@ -66,8 +66,7 @@ modules:
                           --set-key=Comment --set-value="Upscale Images with AI" \
                           --set-key=Name --set-value="Upscayl" \
                           --set-key=StartupNotify --set-value=false \
-                          --set-key=Categories --set-value="ImageProcessing;RasterGraphics;Graphics;"
-        \
+                          --set-key=Categories --set-value="ImageProcessing;RasterGraphics;Graphics;" \
                           --set-key=Type --set-value=Application \
                           org.upscayl.Upscayl.desktop
       - >-
