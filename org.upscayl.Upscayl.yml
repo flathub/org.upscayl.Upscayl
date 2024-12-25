@@ -29,8 +29,8 @@ modules:
         only-arches:
           - x86_64
         url: >-
-          https://github.com/upscayl/upscayl/releases/download/v2.15.1/upscayl-2.15.1-linux.zip
-        sha256: f89953de0f8feecca39aa2893da97bb8fc4df8df6909ad4d056ccad2fda62023
+          https://github.com/upscayl/upscayl/releases/download/v2.15.0/upscayl-2.15.0-linux.zip
+        sha256: 3a43bfa80ba10a5ec1dcbbec9e6620b465f6aa541b7280b6bbabf8e306b67053
         x-checker-data:
           type: json
           url: https://api.github.com/repos/upscayl/upscayl/releases/latest
