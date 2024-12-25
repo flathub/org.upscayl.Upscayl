@@ -50,7 +50,33 @@
 
   <releases>
     <release version="2.15.0" date="2024-12-25">
-      <description></description>
+      <description>
+        <p>Upscayl New Year Update!</p>
+        <ul>
+          <li>A new updated interface for the 500th time! 💅🏻</li>
+          <li>Upscayl now supports multiple languages! SAY WHAT!? 🤯</li>
+          <li>Introducing an all-new model - High Fidelity! 🎉</li>
+          <li>English, Russian, Japanese, French, Spanish, Portuguese, Vietnamese, Indonesian, and Chinese translations have been added 🤗!</li>
+          <li>Added an all-new Lens Viewer! Programming it almost made me insane (NO CLICKBAIT) 🥰</li>
+          <li>You can now paste and upscayl clipboard images! 📋 Thanks to @abhishek-gaonkar 🙏</li>
+          <li>Added a new onboarding dialog that allows you to configure Upscayl before using 👶🏻</li>
+          <li>Upscayl now shows you stats like total images upscaled, average upscayl time, etc., in the right sidebar 😉</li>
+          <li>Refactored the whole codebase for the 1324215041th time 😮‍💨</li>
+          <li>Updated the Right sidebar (More Options) drawer UI because I can 🙃</li>
+          <li>Added TTA Mode, it's too complicated, please brave/google/bing it 😀</li>
+          <li>Added System Info section in Settings Tab and Logs 👌</li>
+          <li>Updated AI models selection with example images and descriptions for people who love things simple 😎</li>
+          <li>Added 256+ character length alert for Windows users (please switch to Linux) 😇</li>
+          <li>Added support for JFIF format, don't know who needs it but still... 🃏</li>
+          <li>Added the option to disable auto-updates check. Please stop bothering me about it now 😀👍🏻</li>
+          <li>Added the option for Mac App Store users to email Upscayl Support directly with logs and all details pre-filled 😉</li>
+          <li>Added the option to help Upscayl with stats like GPU models, DAU, etc. We don't collect any personal data 😇</li>
+          <li>Added a short tutorial video in the onboarding screen 💁🏻‍♂️</li>
+          <li>Added language switcher in onboarding dialog 🈶</li>
+          <li>Fixed Error Screen for client-side issues 🫥</li>
+          <li>Did all of this hard work, just for the one reading this ☺️</li>
+        </ul>
+      </description>
     </release>
     <release version="2.11.5" date="2024-06-01">
       <description/>
