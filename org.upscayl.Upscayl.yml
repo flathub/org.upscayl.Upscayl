@@ -14,7 +14,9 @@ finish-args:
   - --share=network
   - --socket=wayland
   - --socket=fallback-x11
-  - --socket=pulseaudio
+  - --socket=pulseaudio  
+  # Ensure that custom mouse cursors are used and scale properly
+  - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
 
 modules:
   - name: zypak
