@@ -24,10 +24,10 @@ modules:
       - type: git
         url: https://github.com/refi64/zypak
         tag: v2024.01.17
-        commit: ded79a2f8a509adc21834b95a9892073d4a91fdc
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+        commit: ded79a2f8a509adc21834b95a9892073d4a91fdc
   - name: upscayl
     buildsystem: simple
     sources:
@@ -72,7 +72,8 @@ modules:
                           --set-key=Comment --set-value="Upscale Images with AI" \
                           --set-key=Name --set-value="Upscayl" \
                           --set-key=StartupNotify --set-value=false \
-                          --set-key=Categories --set-value="ImageProcessing;RasterGraphics;Graphics;" \
+                          --set-key=Categories --set-value="ImageProcessing;RasterGraphics;Graphics;"
+        \
                           --set-key=Type --set-value=Application \
                           org.upscayl.Upscayl.desktop
       - >-
