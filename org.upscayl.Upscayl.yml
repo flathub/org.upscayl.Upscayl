@@ -19,16 +19,6 @@ finish-args:
   - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
 
 modules:
-  - name: zypak
-    sources:
-      - type: git
-        url: https://github.com/refi64/zypak
-        tag: v2025.09
-        commit: 693a71c5ffa80ec9c9ce2ae03b1ccc493c698e53
-        x-checker-data:
-          type: git
-          tag-pattern: ^v([\d.]+)$
-
   - name: upscayl
     buildsystem: simple
     sources:
